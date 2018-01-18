@@ -34,6 +34,7 @@ public class CommandRequestPacket extends DataPacket {
     public void decode() {
         this.command = this.getString();
         this.type = this.getVarInt();
+        this.getUUID();
         this.requestId = this.getString();
         this.playerUniqueId = this.getVarLong();
     }
