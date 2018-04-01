@@ -9,3 +9,11 @@ checkout:
 machine:
   java:
 version: oraclejdk8
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test
+      - deploy
