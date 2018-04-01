@@ -6,6 +6,4 @@ checkout:
     - mvn package
     - cp -R ./target/nukkit-1.0-SNAPSHOT.jar $CIRCLE_ARTIFACTS
 
-machine:
-  java:
-    version: oraclejdk8
+
